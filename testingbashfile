@@ -1,0 +1,12 @@
+#!/bin/bash
+#testing 321
+#-----------------------------------
+#-----------------------------------
+
+if [ $? -eq 0 ]
+then
+
+echo "output="EEsala CUP namde""
+fi
+
+echo $output
