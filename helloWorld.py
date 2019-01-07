@@ -328,4 +328,106 @@ class League(Football):
 c = League()
 c.player_details()
 c.goalscored()
-	
+
+
+
+#divisible by seven but not multiple of 5
+from functools import lru_cache
+@lru_cache(maxsize=5000)
+def div_seven():
+    for num in range(2000,3200):
+        if (num%7 == 0):
+            if(num%5 != 0):
+                print(num," = Value is divisible by 7 but not multiple of 5")
+            else:
+                print(num,"= Divisible by 7 & multiple of 5")
+        else:
+            print(num," = NOT divisible by 7")
+
+div_seven()
+
+
+
+#Dictionary that contains (i,i*i) 
+
+dict1={}
+num = int(input("Enterthe value: \n"))
+#num=8
+if(num <= 0):
+    print("please enter the integer greater than 0")
+for i in range(1,num+1):
+    dict1[i] = i*i
+print(dict1)
+
+
+
+#accept sequence of line as inputs and capitalize each word
+
+
+new = input("Enter the lines \n")
+
+print(new.upper())
+
+
+#accept the word print words remove duplicates and sort them alphanumerically
+#accept the wor9d print8 words remove d7uplicates and so6rt them alphanumerically4
+
+string1 = "apple pineapple kiwi orange kiwi apple chickoo"
+
+
+#print(jwords)
+list1=[]
+def rem_dup(val):
+    for i in val:
+        if i not in list1:
+            list1.append(i)
+    print(list1)
+
+rem_dup(string1.split())
+v=" ".join(list1)
+print(sorted(v))
+
+#calculate number of integer and lettrs in sentence
+
+value = input("PLEASE PROVIDE THE INPUT: \n")
+
+print(value)
+digit=0
+letter=0
+space=0
+for i in value:
+    if (i.isalpha()):
+        digit+=1
+        
+    elif(i.isnumeric()):
+        letter+=1
+    elif(i.isspace()):
+        space+=1
+print(digit)
+print(letter)
+print(space)
+
+   #list comprehension square each odd value in the list
+
+list2=[1,2,3,4,5,6,7,8,9]
+
+val = [i*i for i in list2 if (i%2 != 0)]
+print(val)
+
+
+#create & open a file write 5 sentence into it
+#sentence should contain specia; char 
+#then write func in same program t read the containt of  file
+#handle the execption
+
+new = open("new1.txt","w")
+new.write("one two three four five")
+new.close()
+try:
+    new = open("new4.txt","r")
+    print(new.read())
+except IOError:
+    print ("Error: File does not appear to exist.")
+      
+finally:
+    new.close()
