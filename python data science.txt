@@ -1,0 +1,83 @@
+
+Python for data science
+Content:
+1.	Regression
+2.	Basic Python Libraries 
+a.	Pandas
+b.	numpy
+
+Regression - technique
+Regression is a technique to understand the relationship between 
+the variables and how they contribute.
+often they are related to producing a particular outcome.
+
+Linear regression  - linear variables
+
+Single Variable Linear Regression is a technique used to model
+the relationship between a single input independent variable 
+and an output dependent variable using a linear model i.e a line.
+Y=mX+c
+Multi Variable Linear Regression 
+where a model is created for the 
+relationship between multiple independent input variables 
+and an output dependent variable. 
+Y=a_1*X1+a_2*X2+c
+
+NOTE: INDENTATION IS IMPORTANT
+if(condition):
+	print("python")
+else:
+	print("python not")
+	
+	ERROR:-
+	for i in range(2.0):
+		print(i)
+	Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'float' object cannot be interpreted as an integer	
+
+Pandas -  (Pandas is used in NIA SEW to read the data in CSV file)
+Read different varieties of data
+csv json 
+Manipulate & visualization
+# import the pandas pkg & read the csv file
+
+>>import pandas as pd
+>>df=pd.read_csv("data.csv")
+#read the excel file
+>>df1=pd.read_excel("data.xlsx")
+Creating train and test dataset
+Train/Test Split involves splitting the dataset into training and testing sets respectively, which are mutually exclusive. After which, you train with the training set and test with the testing set. 
+This will provide a more accurate evaluation on out-of-sample accuracy because the testing dataset is not part of the dataset that have been used to train the data. It is more realistic for real world problems.
+This means that we know the outcome of each data point in this dataset, making it great to test with! And since this data has not been used to train the model, the model has no knowledge of the outcome of these data points. So, in essence, it’s truly an out-of-sample testing.
+
+numpy - numerical python
+python is slower in execution
+numpy fastens python operations by converting repetative code to compiled form
+>> import numpy as np
+>> print "Numpy imported successfully"
+>>intarray = np.arrary([1,2,3,4],int)
+
+>>print(intarray[2])
+
+regression 
+predective modelling technique which 
+investigates the relationship between dependent and independent variables
+
+
+uses
+1. trend forcasting
+2. strength of predicators
+3. forcast the effect
+
+
+1. maxrun use the multilinear regression algorithm
+2. 7 atributes are used hence multi linear
+3. numpy to predict the values
+4. inbuilt api are built to predict the model
+
+
+1. Job failure use Multi layer perceptron
+2. cognitive and enrichment api are called to predict the model
+
+
