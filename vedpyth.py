@@ -5,6 +5,7 @@ print("# Python Scripts here #")
 num1=4.5
 num2=6.7
 print("\n")
+print("\n")
 sum1=num1+num2
 print('Sum of {0} and {1} is {2} '.format(num1,num2,sum1) )
 sum2=0
