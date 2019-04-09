@@ -29,6 +29,7 @@ if(list1[2] > list1[0]):
 
 	
 	
+
 #LCM of two numbers
 
 x=34
@@ -38,9 +39,83 @@ if(x>y):
 else:
 	greater = y
 
-while(true):
-	lcm = greater
+	
+	#named function
+def polynomial(x):
+    return x**2 + 5*x + 4
+print(polynomial(-4))
+
+#lambda
+print((lambda x: x**2 + 5*x + 4) (-4))
+
+
+#lambdas  - anaonymus  - map - filters
+ 
+ #generators  are type of iterables
+ 
+def countdown():
+  i=0
+  while i < 5:
+    yield i
+    i += 1
+    
+for i in countdown():
+  print(i)
 	
 	
+
+
+	
+def decor(func):
+  def wrap():
+    print("============")
+    func()
+    print("============")
+  return wrap
+
+def print_text():
+  print("Hello world!")
+
+decorated = decor(print_text)
+decorated()
+
+
+#maps
+def add_five(x):
+  return x + 5
+
+nums = [2,3,4,5]
+result = list(map(add_five, nums))
+print(result)
+#filter
+nums = [11, 22, 33, 44, 55]
+res = list(filter(lambda x: x%2==0, nums))
+print(res)#a function that return boolean
+
+
+#factorial
+
+def factorial(x):
+	if x==1:
+		return x
+	else:
+		return x * factorial(x-1)
+print(factorial(5))
+
+
+#fibonaci
+
+def fib(x):
+	if x==0 or x==1:
+		return 1
+	else:	
+		return fib(x-1)+ fib(x-2)
+print(fib(4))
+
+#sets
+
+#itertools
+
+#OOPS
 	
 
