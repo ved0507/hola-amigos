@@ -116,6 +116,39 @@ print(fib(4))
 
 #itertools
 
-#OOPS
-	
+#OOP - object oriented programming 
+print("****OOP CONCEPTS BEGIN****")
+class Dog:
+	def __init__(self,name):
+		self.name=name
+	def sayWoof(self):
+		print("Woof woof said"+self.name)
+doggy=Dog("Callum")
+print(doggy.name)
+doggy.sayWoof()
+
+#Attribute error 
+#trying to access the attribute that isnt defined causes attributeError
+
+
+
+#inheritance
+#allows us to share functunality bewtween classes
+
+class College:
+	def __init__(self,name,age):
+		self.name=name
+		self.age=age
+class Student(College):
+	def study(self,section):
+		self.section=section
+		
+class Teacher(College):
+	def teach(self,teaches):
+		self.teaches=teaches
+		
+student1=Student("Vedavyas",23)
+
+print("Name: ",student1.name,"\nage:",student1.age)	
+		
 
