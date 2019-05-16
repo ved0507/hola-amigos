@@ -31,6 +31,33 @@ NIA is built in MAVEN
 5. mutable types - list sets dictioneries
 	immutable types - strings tuples numbers
 
-
+17 may 2019    -- 1 AM IST
+scripting
+1. rename a file	
+	import os
+	#os.rename(src,destination)
+	os.rename("ved.txt","v.txt")
+2.polymorphisam - abilty to take different form
+	define method in child same name as in paraent class
+    class Parent:
+		def method1():
+			pass
+	class Child:
+		def method2():
+			pass
+3. bubble sort
+	def bubble(x):
+		b=len(x)-1
+		for i in range(b):
+			for j in range(b-i):
+				if x[j])>x[j+1]:
+					x[y],x[y+1]=x[y+1],x[y]
+		retrn x
+		
 	
+4. Assert -sanity check that you can turn on or off when you are doe with your testing
+   assertExpression[,Arguments]
 
+		
+	
+5. exception
