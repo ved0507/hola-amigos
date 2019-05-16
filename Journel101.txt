@@ -1,0 +1,25 @@
+tomcat application server
+apache tomcat is web server
+
+what is Tomcat?
+1. it is a application serverion
+2. renders web pages that include java server pages
+
+
+
+
+what do i have
+16 tomcat servers with RHEL 6+ 
+2 of the servers installed with machine learning models numpy pandas and regression MLP
+integration of automation tool with tickiting plaform
+
+NIA is built in MAVEN
+
+================guru99==================
+1. random numbers
+	import random;	
+	random.random();
+2. 
+
+	
+
