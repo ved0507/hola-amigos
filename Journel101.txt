@@ -19,7 +19,18 @@ NIA is built in MAVEN
 1. random numbers
 	import random;	
 	random.random();
-2. 
+
+2. lambda expression is anonymus expression
+
+3. convert number to string
+	str()
+	
+4. local variable - if var is assigned within the function then it is local
+	global variable if variable used as reference in function 
+
+5. mutable types - list sets dictioneries
+	immutable types - strings tuples numbers
+
 
 	
 
