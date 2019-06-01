@@ -61,3 +61,241 @@ scripting
 		
 	
 5. exception
+
+#===========Automation anywhere v11=============
+
+Feasibility analysis
+
+points to remember
+1. Need to performing feasibility analysis before automation
+2. 5 steps involved for feasibility analysis
+3. fesibility matrix for identifying fesibility
+
+feasibility steps
+1. gathering information and resource - need SME
+2. Examining process & noting down manual steps
+3. understanding the logic - order of process
+4. checking out hurdles that can prevent automation
+5. verifying element that might require further testing
+
+Feasibility matrix
+fesibility index
+score 	rate		remarks
+0-14%	Low			Not Good
+15-28%	Medium		Good with some complexity
+29-35%	High		Good candidate
+
+Complexity assessment
+- determine complexity of automation
+	- estimate effort
+	- estimate effort for standardization
+	
+
+Informatino silos
+data 					rate
+1 database 				3
+1 email inbox 			1
+citrix/flash/activex	5
+Non-dedicated email inbox	10
+
+26/May
+
+ROI analysis
+
+1 .Perfromed to do cost benefir analysis
+2. perfromed after knowing bussiness use case
+
+points to remember
+1. discuss need for performing ROI analysis
+2. process of ROI analysis
+3. ROI calculator
+
+ROI estimation of expected profit
+
+improved quality - total number of error in the automatino process
+
+bussiness agility - soft savings
+
+process improvement - regulatory compliance
+
+training & services - cost of solution
+
+Next===Automation design===
+
+
+
+==================python 5 simple programms
+
+#1
+class Football:
+	def __init__(self,name,league):
+		self.name=name			
+		self.league=league
+	def club(self):
+		if(self.league == "La Liga"):
+			return "Spain"
+		else:
+			print(self.name +" Must be another country club")
+			
+club1=Football("Liverpool","Premier league")
+#club1=Football("Real Madrid","La Liga")
+v=club1.name
+
+#2
+
+def extendlist(val,list[]):
+	list.append(val)
+	return list
+	
+list1=extendlist(10)
+print(list1)
+		
+#2.2
+def extendlist(val,list=None):
+	if list is None:
+		list = []
+	list.append(val)
+	return list
+	
+list1=extendlist(10)
+list2=extendlist(22,[])
+list3=extendlist("a")
+list4=extendlist("b")
+print(list1)
+print(list2)
+print(list3)
+print(list4)
+
+
+#3 current directory
+
+import os
+print(os.path())
+
+#4
+tupleis immutable
+list is mutable
+
+#5	
+a=10
+b=4
+
+print("equal" if a== b else " greater" if a>b else " lesser")
+
+
+
+
++==================AA-automation design=======
+
+automation design
+explain & describe the 10 steps of AA-automation
+
+check eligibility
+determine if it is feasibile
+access time and effort neededfor automating 
+calculate overall profit to be gained by its automation
+
+automation design - every steps required for automation
+ensure prerequisites
+
+10 steps are
+1. install software - install AA & provide necessary access
+2. define start point - 	define inputs required for automation
+3. define customer experiance - feedback,output modifications
+4. hands on design - optical recorders
+5. manage logs
+6. determine monitoring plan
+7. define modules - subtask modules,executables modules,template modules
+8. utilizing modules
+9.prepare workflow
+10 prepare infra
+
+
+
+
+
+==============JAVA hacker rank
+
+1. java stdin stdout
+
+import Java.util.*;
+
+public class Animal(){
+	public static void main(){
+		Scanner scan=new Scanner(System.in);
+		int a = scan.nextInt();
+		System.out.println(a);
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+if(n % 2 == 0 )
+{
+	if(n >= 2) && (n <=5)
+	{
+	System.out.println("Not weird");
+	}
+	elseif(n >= 6) && (n <=20){
+	System.out.println("weird");}
+	if((n > 20){
+	System.out.println("weird");}
+}
+else{
+	System.out.println("weird");
+}
+
+
+
+
+
+
+
+==01/06/2019============= JAVA day2 =======
+
+1. 
+class Test{
+	protected x,y;
+}	
+	class Main{
+
+	public static void main(String args[]){
+		Test t new Test();
+		System.out.println(t.x+ " " +t.y)
+	
+	}
+}
+Ans. java a protected member is accessable in all class of same pacakage
+hence x,y=0,0
+
+2. 
+for(int i;1;i++) ----> ERROR
+integer value cannot be puthere boolean is expected
+hence correct value is:
+for(int i;true;i++)
+
+3. 
+IN java we cannot call static method within a static method 
+hence make fun() static then call the fun
+
+class Main { 
+    public static void main(String args[]) {    
+        System.out.println(fun()); 
+    }  
+	//int fun() { 
+	static int fun(){
+	
+        return 20; 
+    }  
+} 
+
+4. In Java we cannot call static variable 
+we can have static class member
