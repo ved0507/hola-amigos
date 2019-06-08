@@ -299,3 +299,249 @@ class Main {
 
 4. In Java we cannot call static variable 
 we can have static class member
+
+
+5. Declaration & initilization
+int variable2 //declaration
+
+int variable =3 //assignment
+
+
+6. oops concept
+polymorphism
+abstraction
+classinheritance
+encapsulation
+object
+	
+6.1 polymorphism -  	
+class GOGtest{
+	
+// Overloaded sum(). 
+    // This sum takes two int parameters 
+    public int sum(int x, int y) 
+    { 
+        return (x + y); 
+    } 
+  
+    // Overloaded sum(). 
+    // This sum takes three int parameters 
+    public int sum(int x, int y, int z) 
+    { 
+        return (x + y + z); 
+    } 
+  
+    // Overloaded sum(). 
+    // This sum takes two double parameters 
+    public double sum(double x, double y) 
+    { 
+        return (x + y); 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        GOGtest s = new GOGtest(); 
+        System.out.println(s.sum(10, 20)); 
+        System.out.println(s.sum(10, 20, 30)); 
+        System.out.println(s.sum(10.5, 20.5)); 
+    } 
+} 
+polymorphism are of two types
+Overloading 
+overriding
+
+6.2 inheritance
+Allow to inherit(fields and methods) in the other class
+
+	a. super class - 
+	b. sub class 
+	c. reusability
+
+encapculation - data protector 
+basically variable is hidden from other class
+only the data can be seen from the members of the other class
+
+
+Data abstraction
+only the essential details are displayed to the user 
+
+7 exception in java
+
+8. interpreters are dependent platform
+
+JVM is a Interpreter which is used to convert the byte code to corresponding machine 
+code and JVM will help to convert the .class file into corresponding
+machine language.
+
+9 main method cannot be privte 
+
+9.1
+class ABCBank{
+	int phone;
+	double getPhone(){
+		System.out.println("phone number received");
+		return phone;
+	}
+}
+ans. code will be compiled and generate ABCBank.class file
+
+10 . compiler dont check whether the class contains the main method or not
+it is the duty of JVM to check main method
+ERROR : Run time exception
+
+11 Main method should be public and static 
+
+public static void main(String[] args){
+}
+Why JVm always searches the JVM
+
+
+
+{hash set V hash map
+
+hashing
+
+static v final
+
+constructor
+
+parameterized constructor
+
+runtime exception & eg.
+
+explain the data
+
+java app runtime - run with main program
+public - access modifeier main function is accessable
+void - return 
+static - 
+there can be multi ple mains
+
+
+explain string - object it is a collection
+immutable - cannot change
+
+what is contatination
+
+
+
+}
+
+
+
+1.order of modifier
+
+=================JAVA data types====
+
+1. class Test06J{
+	public static void main(String[] args){
+		booleab b=true;
+		if(b==true){
+		System.out.println("Test06J");
+		}
+	}
+}
+
+2.Enum - enumerator
+note - enum is implicitly public static final.hence we cant create child item
+java.lang.Enum.class
+
+methods present in java Enum
+a.values(),valuesOf(),ordinal()
+
+toString() is overridden in java
+enum Color{
+RED,GREEN,BLUE
+}
+public class Test06J{
+public static void main(String[] args){
+	Color c1 = Color.RED;
+	System.out.print(c1)
+	}
+	}
+	
+	
+================python 08/06/2019==========
+
+raw_input
+input
+
+num1=input()
+num2=input()
+print(num1+num2)
+#returns concatinated string
+#change the values to int(num1)
+
+num1=int(num1)
+num2=int(num2)
+print(num1+num2)
+#####3
+from sys import stdin,stdout
+def fun():
+	n=stdin.readline()
+	arr =int(x) for x in stdin.readline().split()
+	
+	
+	
+	# import random
+
+# while True :
+	# yourinput=input("Enter the input: ")
+	# out=random.randint(1,100)
+	# if(int(yourinput) > out):
+		# print("Your have your lucky number")
+		# print (out)
+		# break
+	# else:print("Try again",out)	
+		
+		
+		sep="" - seperater
+		end="" - next line 
+print("vedavyas",end="@")
+print("burli")
+
+##write a logic to write script of amazon prodcut avaialability
+1. imoport all the req modules like requests html  from lxml
+	time smtplib schedule
+	
+2. methods a. send mail component b. check the availability
+	c. read the input d.schedule the job to check every 1 min
+	
+sort the list by input
+list1=['a','b','z','y','p','e']
+print(sorted(list1))
+
+use this for any sorting
+
+list.sort(key=int) or
+list.sort(key=i=len)
+list.sort(reverse=True)
+list1=['a','db','hz','oy','zp','ue']
+print(sorted(list1))
+
+list2=['a','dbe','heez','oeeey','ezp','ueeeeeeee']
+print(sorted(list2))
+list2.sort(key=len)
+list2.sort(reverse=True)
+print(list2)
+
+
+numpy array 
+
+arr=array.array('i',[]1,2,3,4,5])
+
+
+
+arr=array.array('i',[1,2,3,4,5])
+for i in range(0,3):
+	print(arr[i],end=" ")
+print("\r")
+
+out=np.arange(8)
+print(out)
+
+out1=np.arange(8).reshape(2,4)
+print(out1)
+out2=np.arange(8).reshape(2,2,2)
+print(out2)
