@@ -593,3 +593,18 @@ def selection(lst1):
 	
 	return lst1
 print(selection(lst1))
+
+
+#=========lambda expression in java
+interface funinterface{
+	void abstractfun(int x);
+	
+	public void 
+}
+
+class Test{
+	public static void main(String args[]){
+		funinterface obj = (int x)->System.out.println(2*x);
+		
+		obj.abstractfun(5)
+	}
