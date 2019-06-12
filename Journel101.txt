@@ -553,8 +553,38 @@ Similiar to arange but instead of step it uses sample number.
 print("B\n", geek.linspace(2.0, 3.0, num=5, retstep=True), "\n")
 
 
+
 flatten array  - collapse into one dimension 
 
+#=========Python -Loops========GFG==========
+#----Loops-----
+#for loops
+arr=["bannana","apple","pineapple","grapes"]
+
+for i in arr:
+	print (i)
+	
+
+arr1=[12,13,15]
+total=0
+for i in arr1:
+	total=total+i
+	print(total,"-->",end=" ")	
+print("\n")
+
+
+
+#Sum of all multiples of three and five that are less than 100
+import random
+ranarr1=[]
+def mul35(arr1):
+	for i in arr1:
+		if i%3 == 0 and i%5 == 0:
+			print("Multiples of 3 and 5==>",i)
+for i in range(100):
+	ranarr1.append(i)
+mul35(ranarr1)
+	
 
 #============Sorting===
 
@@ -608,3 +638,93 @@ class Test{
 		
 		obj.abstractfun(5)
 	}
+
+	
+		
+========= awk bash  hacker rank
+
+awk programming lang allows manipulation of structured data
+
+1. cat emp.txt |awk '{print $4}'
+2.
+$ cat emp.txt |awk 'BEGIN {count=0}
+$4 ~ /Technology/ {count++;}
+END {print "yes",count;}'
+ans==>yes 3
+
+
+3. awk 'avg=($1+$2+3/3); (avg<=50)?"FAIL":(avg<80)?"B":"A"'
+
+
+
+print("Numpy starts here")
+
+import numpy as np
+
+
+
+arr=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+
+print(type(arr))
+print("Dimension",arr.ndim)
+print("shape",arr.shape)
+print("size & type",arr.size,arr.dtype)
+
+#transpose of array
+print("Before transpose \n",arr)
+print("============")
+print("Transpose\n",arr.T)
+
+#unary operators
+#min max sum 
+print(arr.min(axis=1))
+print(arr.max(axis=1))
+print("Sum",sum(arr))
+
+print(np.arange(1,10).reshape(3,3))
+
+
+list2=[]
+if len(list2) == 0:
+	print("empty")
+else:
+	print("not")
+#find unique from list
+arr1=[1,2,3,3,3,3,4,5,6,7,7,8,9]
+arr2=[]
+
+for i in arr1:
+		if i in arr2:
+			continue
+		else:
+			arr2.append(i)
+print(arr2)
+
+#multiply all numbers in list
+
+
+
+import random
+arr3=[]
+for i in range(5):
+	x=random.randint(1,10)
+	if x not in arr3:
+		arr3.append(x)
+print(arr3)
+j=1
+def mult(r):
+	j=1
+	for i in arr3:
+		j=j*3
+	return j
+
+print(mult(arr3))
+
+		
+	
+list3=[1,2,3]
+print(np.prod(list3))
+
+from functools import *
+n=reduce(lambda x,y:x*y,list3)
+print("numpy part1 ends here")
