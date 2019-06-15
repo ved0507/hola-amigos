@@ -728,3 +728,36 @@ print(np.prod(list3))
 from functools import *
 n=reduce(lambda x,y:x*y,list3)
 print("numpy part1 ends here")
+
+
+
+import random
+roll="yes"
+while roll=="yes" or roll=="y":
+	print(random.randint(1,6))
+	roll=input("Roll again")
+	
+print("Roll game ends here.. Thank you")
+
+#====Gussing game===
+guess_counter=0
+actual_guess=7
+flag="in"
+#loop to count the guess and actual guess
+while guess_counter < 5 and flag=="in":
+	
+	raw=int(input("Guess the number: "))
+	print(raw)
+	
+	if raw == actual_guess:
+		flag="out"
+		print("You guessed it right")
+	guess_counter+=1
+	
+	
+if guess_counter==5:
+	print("You are out of guesses")
+	
+
+	
+	
