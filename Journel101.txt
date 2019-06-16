@@ -853,3 +853,31 @@ fruits[2] = "strawberries"
 print(fruits)
 print(fruits[2][5:])
 
+#true or false
+>>> 2 == 2.0
+True
+>>> 2 is 2.0
+False
+>>>
+#============
+JavaScript
+
+Why study JS?
+=>JS is one of  the 3 languages all of web developers must learn:
+1. HTML to define the content of web pages
+2. CSS to specify the layout of web pages
+3. JS to program the behaviour of web pages
+
+
+Declare variables
+var x,y,z;  //declare var
+x=5;y=4; 	// assign values
+z= x + y;	// compute values
+
+
+#=======================
+Flask - microframework for python
+
+webdevelopment
+
+
