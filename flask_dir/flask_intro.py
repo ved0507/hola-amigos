@@ -4,11 +4,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '8889484a601e14bd086580ca86ec1262'
 posts=[
-	{'Universe':'Star Wars',	 
-	 'Movie':'Star Wars II',	 
-	 'Title':'Attack of clones',
-	 'Director':'George Lucas'	
-	},
+	
 	{'Universe':'Star Wars',	 
 	 'Movie':'Star Wars V',	 
 	 'Title':'Empire Strikes Back',
@@ -34,7 +30,11 @@ def register():
 	form = RegistrationForm()
 	return render_template('register.html',title='register', form=form)
 	
-
+@app.route("/login")
+def login():
+	form = LoginForm()
+	return render_template('login.html',title='login', form=form)
+	
 	
 if __name__ =="__main__":
 	app.run(debug=True)
