@@ -957,8 +957,6 @@ d')
 >>> User.query.all()
 [User('Diameter','radiusx2@demo.com','default.jpg'), User('VED','vedx2@demo.com'
 ,'default.jpg')]
->>>
-
 >>> User.query.filter_by(username='Diameter')
 <flask_sqlalchemy.BaseQuery object at 0x000000000478D0F0>
 >>> User.query.filter_by(username='Diameter').all()
@@ -986,7 +984,6 @@ AttributeError: type object 'User' has no attribute 'queryget'
 >>> user
 User('Diameter','radiusx2@demo.com','default.jpg')
 >>>
-
 >>> post_1=Post(title='Blog 1',content='First post content',user_id=user.id)
 >>> post_2=Post(title='Blog 2',content='second post content',user_id=user.id)
 >>> db.session.add(post_1)
@@ -995,11 +992,6 @@ User('Diameter','radiusx2@demo.com','default.jpg')
 >>> user.posts
 [Post('Blog 1', '2019-06-22 18:43:25.579300'), Post('Blog 2', '2019-06-22 18:43:
 25.580300')]
->>> for posts in user.posts
-  File "<stdin>", line 1
-    for posts in user.posts
-                          ^
-SyntaxError: invalid syntax
 >>> for posts in user.posts:
 ...     print(posts.title)
 ...
@@ -1050,3 +1042,45 @@ AttributeError: 'SQLAlchemy' object has no attribute 'drop'
 >>>
 >>> db.drop_all()
 >>> Post.query.all()
+
+
+#=============================================================================================
+
+from flask_intro import db
+from flask_intro import User,Post
+
+db.create_all()
+user_1 =User(username='Diameter',email='radiusx2@demo.com',password='passwor
+d')
+
+user_2 =User(username='VED',email='vedx2@demo.com',password='password')
+db.session.add(user_1)
+db.session.add(user_2)
+db.session.commit()
+User.query.all()
+User.query.first()
+user=User.query.get()
+
+#============= Hacker Rank - BASH=====
+#!/bin/bash
+read a
+read b
+read c
+
+if [ $a -eq $b ] || [ $a -eq $c ] || [ $c -eq $b ];then
+    if [ $((a+b)) -eq $((c*2)) ];then
+        echo "EQUILATERAL"
+    else
+        echo "ISOSCELES"
+        fi
+else
+    echo "SCALENE"
+    fi
+
+	
+#===========================
+Flask - user authentication
+
+from flask_bcrypt import Bcrypt
+bcrypt=Bcrypt()
+bcrypt.generate_password_hash('Test')
