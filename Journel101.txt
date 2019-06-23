@@ -776,8 +776,11 @@ list1.sort()
 print(list1)
 =========== Python dictionary
 
-1. python built in data type it defines one to one relation between key and values
-	dictionaries are indexed by keys
+=>python built in data type it defines one to one relation between
+key and values
+=>dictionaries are indexed by keys
+=>It is a unordered collection of data values
+=>
 print("Hello there")
 
 
@@ -904,3 +907,146 @@ if __name__ =="__main__":
 
 #======Flask template usage
 #======Flask - wtf forms and validations
+
+
+
+#====== HTML ======
+Hyper text  mark-up language
+commanly used language to write web pages
+refer hypertext101.html
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>This is document title</title>
+   </head>
+	
+   <body>
+      <h1>This is a heading</h1>
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+
+#==The Web Structure==
+Modern Web design 
+HTML - structured
+CSS - Presentation
+JavaScript - Behavior
+
+PHP : Backend
+CMS ; Content management
+
+Attribute always appear in name : value pair
+
+Introduction to HTML 5
+The default character encoding in HTML5 is UTF-8.
+
+
+#=====================
+++++++ Python Flask part 4 Database
+
+>>> db.create_all()
+>>> from flask_intro import User,Post
+>>> user_1 =User(username='Diameter',email='radiusx2@demo.com',password='passwor
+d')
+>>> db.session.add(user_1)
+>>> user_2 =User(username='VED',email='vedx2@demo.com',password='password')
+>>> db.session.add(user_2)
+>>> db.session.commit()
+>>> User.query.all()
+[User('Diameter','radiusx2@demo.com','default.jpg'), User('VED','vedx2@demo.com'
+,'default.jpg')]
+>>>
+
+>>> User.query.filter_by(username='Diameter')
+<flask_sqlalchemy.BaseQuery object at 0x000000000478D0F0>
+>>> User.query.filter_by(username='Diameter').all()
+[User('Diameter','radiusx2@demo.com','default.jpg')]
+>>> user=User.query.filter_by(username='Diameter').first()
+>>> user
+User('Diameter','radiusx2@demo.com','default.jpg')
+>>> user.id
+1
+>>> user.username
+'Diameter'
+>>> user.email
+'radiusx2@demo.com'
+>>> user.posts
+[]
+>>> user.all()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'User' object has no attribute 'all'
+>>> user=User.queryget(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: type object 'User' has no attribute 'queryget'
+>>> user=User.query.get(1)
+>>> user
+User('Diameter','radiusx2@demo.com','default.jpg')
+>>>
+
+>>> post_1=Post(title='Blog 1',content='First post content',user_id=user.id)
+>>> post_2=Post(title='Blog 2',content='second post content',user_id=user.id)
+>>> db.session.add(post_1)
+>>> db.session.add(post_2)
+>>> db.session.commit()
+>>> user.posts
+[Post('Blog 1', '2019-06-22 18:43:25.579300'), Post('Blog 2', '2019-06-22 18:43:
+25.580300')]
+>>> for posts in user.posts
+  File "<stdin>", line 1
+    for posts in user.posts
+                          ^
+SyntaxError: invalid syntax
+>>> for posts in user.posts:
+...     print(posts.title)
+...
+Blog 1
+Blog 2
+>>> for posts in user.posts:
+...     print(posts.cotent)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+AttributeError: 'Post' object has no attribute 'cotent'
+>>> for posts in user.posts:
+...     print(posts.content)
+...
+First post content
+second post content
+>>> post=Post.query.all()
+>>> post
+[Post('Blog 1', '2019-06-22 18:43:25.579300'), Post('Blog 2', '2019-06-22 18:43:
+25.580300')]
+>>> post.author
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'author'
+>>> post.Movie
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'Movie'
+>>> db.drop.all()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'SQLAlchemy' object has no attribute 'drop'
+>>> User.query.all()
+[User('Diameter','radiusx2@demo.com','default.jpg'), User('VED','vedx2@demo.com'
+,'default.jpg')]
+>>> POst.query.all()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'POst' is not defined
+>>> Post.query.all()
+[Post('Blog 1', '2019-06-22 18:43:25.579300'), Post('Blog 2', '2019-06-22 18:43:
+25.580300')]
+>>> db.drop.all()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'SQLAlchemy' object has no attribute 'drop'
+>>>
+>>>
+>>> db.drop_all()
+>>> Post.query.all()

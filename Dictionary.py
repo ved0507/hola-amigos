@@ -33,6 +33,9 @@ list(numbers(11))
 #ans==> 3,7
 
 
+
+
+
 def add(x,y):
 	x+y
 	return 0
@@ -74,3 +77,15 @@ print(flight_set)
 
 passengers_list=["George", "Annie", "Jack", "Annie", "Henry", "Helen", "Maria", "George", "Jack", "Remo"]
 print(set(passengers_list))
+
+#=============================GFG dictionary
+from datetime import date
+today=date.today()
+# today=today.strftime("%d%m%y")
+print("Updated date:",today)
+dict1={1:3,3:9,4:12,5:15}
+print(dict1.pop(5))
+
+dict1.clear()
+print(dict1)
+
