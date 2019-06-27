@@ -1078,9 +1078,32 @@ else
     fi
 
 	
-#===========================
+#===================================================================
 Flask - user authentication
 
 from flask_bcrypt import Bcrypt
 bcrypt=Bcrypt()
 bcrypt.generate_password_hash('Test')
+#=====================
+
+Python Flask-restful intstallation 101
+
+1. intall flask -restful 
+	>>pip install flask-restful
+	
+2. git clone https://github.com/flask-restful/flask-restful.git
+
+3. Restful  routing
+the main building block provided by flask restful are resource 
+
+#================================================================================
+Array 
+1. array(datatype,valuelist)
+import array
+arr=array.array(i,[1,2,3,4,5])
+
+
+#==============================================================
+
+
+C++
