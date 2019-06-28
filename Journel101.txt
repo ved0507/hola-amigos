@@ -1107,3 +1107,43 @@ arr=array.array(i,[1,2,3,4,5])
 
 
 C++
+
+1. variables must be defined with name and datatype
+//helloworld.cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    /*int myVar=30;
+    int myVar2=20;
+    cout<<myVar + myVar2;*/
+    string char1="Chelsea";
+    string char2="Frank Lampard";
+    int age;
+    age=43;
+    
+    cout<<"I am lampard"<<endl;
+    cout<<"I was a "<<char1<<" player"<<endl;
+    cout<<"I am chelsea head coach - " <<char2<<" he is "<<age <<endl;
+ //   cin>>cinput;
+    
+    
+ //   return 0;
+}
+
+char grade ="A";
+string phrase = "Lampard Academy";
+
+int age = 43;
+double gpa = 2.4;
+bool isMale = false;
+
+
+
+
+
+
+
+
+geenral purpose programming language

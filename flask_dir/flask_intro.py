@@ -17,6 +17,8 @@ class User(db.Model):
 	password =db.Column(db.String(60),nullable=False)
 	posts = db.relationship('Post',backref='Movie',lazy=True)
 	
+	def __init__(self):
+		pass
 	def __repr__(self):
 		return f"User('{self.username}','{self.email}','{self.image_file}')"
 
