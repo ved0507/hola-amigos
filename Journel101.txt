@@ -1138,12 +1138,51 @@ string phrase = "Lampard Academy";
 int age = 43;
 double gpa = 2.4;
 bool isMale = false;
+#==============================================================================================================================================================
+
+#iteration over numpy
+import numpy as np
+
+a= np.arange(12)
+
+a1=a.reshape(3,4)
+for x in np.nditer(a1):
+	print(x)
+	
+# split list having single int
+
+list=[200]
+
+out=list(map(int,str(input[0])))
+
+
+def fun(a, b, c, d): 
+    print(a, b, c, d) 
+  
+# Driver Code 
+my_list = [1, 2, 3, 4] 
+  
+# Unpacking list into four arguments 
+fun(*my_list)
+
+def packaingmysum(*args):
+	sum=0
+	for i in range(len(args)):
+		sum+=args[i]
+	return sum
+	
+packaingmysum(4,5,6,7)
+
+
+#===================================================
+pandas - 2d data structure
+three basic components
+data
+row 
+columns
+
+
+create a dataframe
 
 
 
-
-
-
-
-
-geenral purpose programming language
