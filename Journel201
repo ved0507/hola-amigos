@@ -1,0 +1,5 @@
+Devops
+1. Continuous integration - helps in automating the nuild process enabling frequent integration Quality check and testing
+2. continuous delivery - extension to CI validation and verifying the automation rediness through usage of appropriate tools
+
+People ------------------- process ------------ technology
