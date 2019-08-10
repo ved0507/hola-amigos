@@ -13,4 +13,60 @@ liskov substitution principle - function pointers or ref to base classes must be
 interface segrigation principle - client should not use interface that they dont use
 dependency inversion principle - THere should not be any dependency between high level and low level modules
 
+todo
+keyboard practice  55 min
+learn new language 45 min
 
+
+
+java usees JIT just in time  to convert text into bytecodes
+
+oops concepts
+Inheritance
+encpsulation
+polymorphisam
+abstraction
+
+
+ABSTRCTION - HIDE THE UNWANTED
+what is abstract class?
+abstract - is selecting the data  from larger pool and showing only relavant data to object
+
+class Bank
+info- name ,address ,number ,tax info, favfood ,maritialstatus ,qualification, favactor, favmovie
+we may not need to show fav food,  actor , movie
+So sending useful data from the above pool is abstraction
+
+abstract class
+a class which is declared as abstract is called abstract class
+a normal class cannot be abstrcty class
+
+abstract method - a method without body is abstract method
+must be declared ion abstract class. ONLY A signiture
+
+differences ENCAPSULATION AND ABSTRACTION AND INTERFACE
+points of Abstraction
+0. solves at design level
+1. It is about hiding unwanted details and showing most essential information
+2. focus on what info obj must contain
+3. it can have both abstract and non abstract
+4. doesnt support multiple inheritnce
+5. it can have protected and public method
+6. it can have final, static and final static var wth any access specifier
+
+points of encapsulation:
+0. solves at implementation level
+1. hiding the code and data into single unit
+2. hiding details of how much obj does something for security reasons
+
+points on INTERFACE
+0. only public static final variable
+1. only abstract method
+2. support multiple inheritance
+3. only public abstract method
+ 
+ pros
+ 1. allows you to communicate with related classed as siblings
+ 2. reduce complexity of design and implementaion
+ 
+ 
