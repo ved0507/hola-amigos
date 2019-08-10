@@ -1,5 +1,16 @@
+README.md 
 Devops
 1. Continuous integration - helps in automating the nuild process enabling frequent integration Quality check and testing
 2. continuous delivery - extension to CI validation and verifying the automation rediness through usage of appropriate tools
 
 People ------------------- process ------------ technology
+
+SOLID
+Single responsibility principle - class should have only one reason to change
+Open closed principle - open to extension closed to modification
+liskov substitution principle - function pointers or ref to base classes must be able to use object of derived class without knowing
+
+interface segrigation principle - client should not use interface that they dont use
+dependency inversion principle - THere should not be any dependency between high level and low level modules
+
+
