@@ -70,3 +70,45 @@ points on INTERFACE
  2. reduce complexity of design and implementaion
  
  
+polymorphisam
+what is ploymorphisam
+INtroduction to polymorphism
+ability of object behaving differently for same method is called polymorphism
+
+types of polymorphism
+static and dynamic 
+static
+1. method over loading 
+2. uses compile time binding 
+3. method invoked is based on the reference type 
+dynamic 
+1. Method overriding 
+2. uses Run time binding 
+3. Method invoked based on object type 
+
+public class Loan{
+public static void main(String args[]){
+int tenure;
+double principle;
+float interest;
+String accounnumber;
+
+Loan(){
+tenure=10;
+interest=8.5f;
+}
+public double EMIreturn(int tenure,double interst){
+return 200;}
+
+}
+public double EMIreturn(int tenure,double principle){
+return 200;}
+
+}
+}
+
+NOTE: return type of method is not consider for overloading 
+
+
+METHOD OVERRIDING
+TO BE CONTINUED
