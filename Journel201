@@ -111,4 +111,21 @@ NOTE: return type of method is not consider for overloading
 
 
 METHOD OVERRIDING
-TO BE CONTINUED
+Method overriding 
+Dynamic method dispatch 
+runtime polymorphism
+
+
+Method and constructor
+1. constructor is invoked implicitly
+2. it is used to initialize state of an objects
+3. constructor name must be same as class name
+
+Method
+1. used to expose the behaviour of the obj
+2. must have a return type
+3. invoked implicitly
+4. method may or may not be same as class name
+
+
+
