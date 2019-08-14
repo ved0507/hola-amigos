@@ -127,5 +127,10 @@ Method
 3. invoked implicitly
 4. method may or may not be same as class name
 
+Static variable is used to refer comman property of all obj
 
+This keyword refer to the current obj
+or current class obj
 
+question 54 and polymorphism
+TOBE CONTINUED
