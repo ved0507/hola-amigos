@@ -1186,3 +1186,13 @@ create a dataframe
 
 
 
+Inner Relm
+Core Python 
+understand between python 2 and 3
+Web framework - flask and django 
+OOps mapping - What makes ORM special 
+difference between ORM and SQL
+Multiprocess architecture - Threads and process
+Develop and use of REST API
+How to pacakage up code for release and deployment
+Front end and DB
