@@ -134,3 +134,104 @@ or current class obj
 
 question 54 and polymorphism
 TOBE CONTINUED
+
+
+
+
+
+
+
+Variable is a container
+holds the value while java program is getting executed
+variable assigned with data type
+three types of variables
+static
+local 
+instance
+
+
+
+Local variable declared inside the body of method 
+Can be used within the method
+It cannot be defined with static keyword
+
+Instance decalred inside class but outside method
+its instance specific values cannot be shared among instance
+
+static variable
+declared static 
+cannot be local
+memory allocation happens only once
+
+
+class Addition{
+public static void main(String args[])
+{
+int a =10;
+int b =12;
+int c =a+b;
+System.out.println("vaule"+ c)
+}}
+
+
+
+Widening
+class Sample{
+public static void main(String args[])
+{
+int a =10;
+float f=a;
+Sysatem.out.println(a)
+Sysatem.out.println(f)
+}}
+
+Narrowing - Typecasting
+class Sample{
+public static void main(String args[])
+{
+float f=10.5f;
+//if we define int a=f;//compile time error
+int a=int(f);
+System.out.println(a)
+System.out.println(f)
+}}
+
+
+Overflow
+class Sample{
+public static void main(String args[])
+{
+int a =130;
+byte b=(byte)a;
+System.out.println(a)
+System.out.println(b)
+}}
+out: 130
+-126
+
+Adding lower type
+
+class Sample{
+public static void main(String args[])
+{
+int a =10;
+float f=a;
+System.out.println(a)
+System.out.println(f)
+}}
+
+
+===========
+Data types
+
+Primitive Data types
+- boolean int float short double
+
+Non-Primitive Data types 
+- String Class array interfaces
+
+
+FUNFACT: Java is a typed programming language it means al variables must be declared 
+before using it
+
+
