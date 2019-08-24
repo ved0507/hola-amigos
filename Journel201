@@ -234,4 +234,77 @@ Non-Primitive Data types
 FUNFACT: Java is a typed programming language it means al variables must be declared 
 before using it
 
+====================================INFY LIbrary notes=======
+README-start
+JAVA - Introduction to Class and object
+Naming convention
+naming conventions
+Java follows camel-case syntax for naming the class, interface, method, and variable.
+
+class starts with upper case and it should be a noun
+interface starts with upper case and it should be a adjective
+
+method should starts with lower case and it should be verb
+
+pacakage should be separated by dot
+pacakage com.javapoint
+DONT USE "UNDERSCORE" IN ANY OF THE ABOVE
+
+constant should be upper case like RED and we can use underscore
+
+Object and Class
+In java we design program using object and Classes
+
+OBJECT
+An entity that has state behaviour 
+
+Object has three characteristics
+1. State - represents data/value of an object
+2. Behaviour - represent behaviour /functionality of an obejct
+3. Identity - it is implemented internally by JVM to identify each object uniquely
+
+Object Definitions:
+
+An object is a real-world entity.
+An object is a runtime entity.
+The object is an entity which has state and behavior.
+The object is an instance of a class.
+
+
+CLASS
+It is a group of objects which have common properties
+It is a logical entity
+contains
+1. Field
+2. method
+3. blocks
+4. constructors
+5. nested class and interface
+
+instance variable - created inside the class but outside the method
+- it gets memory at runtime
+local variable
+static variable
+
+Method in java
+it is a function which is used to expose behavior of an object
+advantages 
+code reusability  and optimization
+
+new keyword is used to allocate memory at runtime
+
+E.g.
+//creating a class Student to illustrate how to define class and fields
+
+class Student{
+//defining fields
+int id;//field /instance variable
+String name;
+//creating main method inside student class
+public static void main(String args[]){
+//creating object /instance
+Student s1 =new Student();//create object of student 
+//printing values of the object
+System.out.println("value"+s1.id)//accessing member through refe varaiable
+}
 
