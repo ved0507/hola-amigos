@@ -308,3 +308,47 @@ Student s1 =new Student();//create object of student
 System.out.println("value"+s1.id)//accessing member through refe varaiable
 }
 
+
+
+
+python
+#OOPS concepts
+
+
+Class is a blueprint from which specific objects are created
+class
+Class variable a variable is shared by all instance
+instance variable unique to each instance
+data member
+
+
+eg. 
+class Lion:
+	def __init__(self,color,legs):
+		self.color=color
+		self.legs=legs
+	def roar(self):
+		print("ROOOOAR")
+Thunder =Lion("ginger",4)
+Makalu =Lion("Golden",4)
+MrT =Lion("brownBeard",4)
+MrT.roar()
+
+__init__ most important method in the class
+
+
+
+
+INheritance
+a class can inherit attributes and behaviour methods from another class
+ 
+class Tiger(Lion):
+	pass
+
+
+Thunder =Tiger("ginger",4)
+Makalu =Tiger("Golden",4)
+MrT =Tiger("brownBeard",4)
+MrT.roar()
+
+
