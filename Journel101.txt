@@ -1209,3 +1209,72 @@ thread control block
 
 
 
+27 Aug 2019
+1. Terniry operator
+
+traditional condition
+condition=True #gives you 1
+#condition=false gives you 0
+
+if condition:
+	x=1
+else:
+	x=0
+
+ternery operator
+>>x=1 if condition else 0
+
+
+
+2. File
+
+f= open('test.txt',r)
+
+filecontent=f.read()
+f.close()
+
+use context manager
+
+with open('tezt.txt',r) as f:
+	filecontent=f.read()
+
+
+
+3. Enumerate
+
+list1=['spider','iron','bat','super']
+
+list2=['peter','tony','bruce','clark']
+
+
+for index,values in enumerate(list2):
+    
+	hero=list1[index]
+    
+print(values +' is '+ hero)
+
+
+
+
+msql connection
+import mysql.connector
+
+print("Making Mysql connection")
+
+#creating connection obj
+mysql.connector.connect(host=localhost,user=username,password=pass)
+#creating cursor obj
+cur=myconn.cursor()
+
+
+try:
+	cur.execute("select * from ved;")
+	myconn.commit()
+
+
+except:
+	myconn,rollback()
+
+print(cur.rowcount,"Record inserted")
+myconn.close()
+
