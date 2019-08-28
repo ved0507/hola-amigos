@@ -352,3 +352,71 @@ MrT =Tiger("brownBeard",4)
 MrT.roar()
 
 
+
+#================================
+pacakage burli
+
+class StringClass{
+public statc void main(String args[]){
+String myString= "Hello world";
+int myStringLength = myString.length();
+String myString1lower = myString.toLowerCase();
+System.out.println(myString1lower);
+
+
+}}
+
+
+
+
+myString.replace('e','a')
+myString.index('e')
+
+user input 
+import java.util.scanner;
+
+Scanner myVar = new Scanner(System.in)
+
+
+Inheritance
+Class aquires property of another class
+child inherit traits of parents
+
+1. Single Inheritance
+2. Multiple Inheritance  - java doesnt support
+3. multilevel inheritance
+3. herarchial inheritance
+
+
+parent is super class
+child is sub class
+
+class subclass extends supeclass
+{
+method and fields
+}
+
+eg.
+Doctor is a Surgeon
+
+
+
+class Doctor{
+
+String D_details(){
+return "I am Doctor";
+
+}}
+class Surgeon extends Doctor{
+String S_details(){
+return "I am surgeon"
+}}
+}
+
+class Hospital{
+public static void main(String args[]){
+Surgeon s =new Surgeon();
+s.D_details();
+s.S_details();
+}
+}
