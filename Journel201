@@ -1,3 +1,4 @@
+
 README.md 
 Devops
 1. Continuous integration - helps in automating the nuild process enabling frequent integration Quality check and testing
@@ -420,3 +421,80 @@ s.D_details();
 s.S_details();
 }
 }
+
+Monday
+Nine-Nine-Ninteen 
+
+Inhertiance
+
+child class gets all the attributes from parent obect
+is a relationship
+parent child relationship
+
+uses
+1. basic idea is to reuse the methods and fields of parentclass 
+2. Overriding - run time polymorphisam can be achived
+
+term used in inheritance
+1. SuperClass - parent class
+2. SubClass - child class
+3. ReusABILITY - use of methods and fields of existing class 
+
+class Subclass extends superclass
+{
+//methods and fields
+}
+
+
+
+class Employee{
+float sal=23000;
+}
+class Programmer extends Employee{
+int bonus=1000;
+}
+public static void main(String[] args){
+Programmer p = new Programmer();
+SOP("Programmer sal "+p.sal);
+}
+
+
+
+
+NOTE: on Inheritance
+1. Final method cannot be overridden - if we 
+try to call it we will get complie time error
+2. function with static run time polymorphisam doesnt happens
+
+
+What is Exception 
+Exception handling in JAVA 
+
+1. what is exception
+In Java, when there any distruption in normal flow of program exception occurs
+
+exception handling
+it is a machanisam to handle runtime error such as IOException etc
+
+Advantages
+1. Mantain the normal flow of the application
+
+Hierarchy
+Throwable
+1. Exception - IO SQL ClassNotFound Runtime(artimmatic nullpointer number format Indexoutofbound(array string))
+2. Error - stackoverflow virtualmachineerror outofmemoryerror
+
+
+types of java exception
+1. checked
+2. unchecked
+
+checked exceptions - directly inherit the 
+throwable class except runtime exception
+
+unchecked exceptions - directly inherit the runtimeexception
+They are not checked at compile time but they are checked at runtime
+
+5 keywords used in handling exception
+try catch finally throw throws
+
