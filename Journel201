@@ -133,15 +133,6 @@ Static variable is used to refer comman property of all obj
 This keyword refer to the current obj
 or current class obj
 
-question 54 and polymorphism
-TOBE CONTINUED
-
-
-
-
-
-
-
 Variable is a container
 holds the value while java program is getting executed
 variable assigned with data type
@@ -232,10 +223,9 @@ Non-Primitive Data types
 - String Class array interfaces
 
 
-FUNFACT: Java is a typed programming language it means al variables must be declared 
-before using it
+FUNFACT: Java is a typed programming language it means all variables must be declared  before using it
 
-====================================INFY LIbrary notes=======
+====================================INFY Library notes=======
 README-start
 JAVA - Introduction to Class and object
 Naming convention
@@ -498,3 +488,17 @@ They are not checked at compile time but they are checked at runtime
 5 keywords used in handling exception
 try catch finally throw throws
 
+
+
+
+
+try catch finally block
+
+int div(int a ,int b)throws 
+aritmaticException{
+if(b==0){
+throw new 
+ArithmaticException("divisino by zero")}
+else{
+return a/b};
+}
