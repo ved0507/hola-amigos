@@ -1278,3 +1278,17 @@ except:
 print(cur.rowcount,"Record inserted")
 myconn.close()
 
+
+
+#Flask dynamic URL
+
+from flask import Flask
+app=Flask(__name__)
+@app.route('/home/<string:name>')
+def home(name):
+	return "value is:" +name
+	
+	
+
+
+
