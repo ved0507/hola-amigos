@@ -1292,3 +1292,30 @@ def home(name):
 
 
 
+def reverse(num):
+        strNum=str(num)
+        
+        return strNum[::-1]
+        
+def isPalindrome(num):
+        strNum=str(num)
+        rev=reverse(strNum)
+        intRev=int(rev)
+        flag=True
+        while flag == True:
+            num+=1
+            strNum=str(num)
+            rev=reverse(strNum)
+            intRev=int(rev)
+            if rev == strNum:
+                print('{} is same as {}'.format(strNum,rev))
+                flag=False
+            else:
+                print('{} is NOT same as {}'.format(strNum,rev))
+                flag=True
+            
+        
+        
+            
+isPalindrome(22)
+
