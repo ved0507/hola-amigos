@@ -1319,3 +1319,53 @@ def isPalindrome(num):
             
 isPalindrome(22)
 
+@app.route('api/register',methods=['POST'])
+def login():
+    json_data = request.json
+    user = User(
+          email=json_data['email'],
+          pasword=json_data['email']
+    )
+    try:
+        db.session.add(User)
+        db.session.commit()
+        status='Success'
+    except:
+        statu='ERROR'
+    db.session.close()
+    return jsonify({'result':status})
+
+"""
+1. Angular routing
+enables navigation from one view to another
+
+2. the basics
+<base href="/">
+
+3. Angular imports
+import { RouterModule, Routes } from '@angular/router';
+
+
+4. Configurations
+appRoutes array contains the list of routes to navigate to 
+ RouterModule.forRoot() 
+there is no leading slash in route
+const appRoutes: Routes = [
+  { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'hero/:id',      component: HeroDetailComponent },
+  {
+    path: 'heroes',
+    component: HeroListComponent,
+    data: { title: 'Heroes List' }
+  },
+  { path: '',
+    redirectTo: '/heroes',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+The ** path in the last route is a wildcard
+
+
+"""
