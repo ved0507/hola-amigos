@@ -1277,4 +1277,52 @@ except:
 
 print(cur.rowcount,"Record inserted")
 myconn.close()
+web applications
+a web app has a back end and front end
+back end is where bussiness logic is: back end is where data is manupilated and store 
+front end will determine the look of web application
+
+
+Pyramid 
+Mega framework - make decisions for you . If you dont fit their viewpoint you end up fighting 
+their decisions>
+
+Micro framework - force o decisions making it easy ro start
+
+Goldilocks solution - not to big not to short just right
+
+Pyramid is finishing-focused framework with an architectural desogn
+
+
+from wsgiref.simple_server import make_server
+
+from pyramid.config import Configurator
+
+from pyramid.response import Response
+
+pyramid.view import view_config
+
+@view_config(
+route_name='home'
+)
+
+def home(request):
+   return Response('Welcome')
+
+if __name__='__main__':
+    with Configurator() as config:
+        config.add_route('home','/')
+        config.scan()
+        app = config.make_wsgi_app()
+    server = make_server('0.0.0.0',6543,app)
+    server.serve_forever()
+   
+
+
+pandas merge()
+
+inner
+outer
+left  outer
+right outer
 
